@@ -6,7 +6,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(() => {
   return {
-    base: '/Calculadora/',
+    // Use BASE_PATH env var when set (e.g., GitHub Pages), otherwise default to root '/'.
+    base: process.env.BASE_PATH || '/',
     plugins: [
       react(),
       tailwindcss(),

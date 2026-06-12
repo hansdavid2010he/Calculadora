@@ -117,4 +117,70 @@ input[type="range"]::-moz-range-thumb:hover {
   background: rgba(255, 149, 0, 0.8) !important;
 }
 
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    min-width: 320px;
+  }
+
+  #calculator-panel {
+    border-radius: 16px !important;
+    margin: 8px !important;
+    height: auto !important;
+    padding-bottom: 88px !important;
+  }
+
+  #calculator-display-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-bottom: 10px !important;
+  }
+
+  #calc-screen-display {
+    font-size: 2.25rem !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Make keypad buttons slightly smaller and more touch-friendly */
+  #calc-grid-layout {
+    gap: 8px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  #calc-grid-layout button {
+    height: 44px !important;
+    min-height: 44px !important;
+    border-radius: 10px !important;
+    font-size: 1.05rem !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  /* Bigger hit area for zero key spanning two columns */
+  #key-0 {
+    padding-left: 1.25rem !important;
+    text-align: left !important;
+  }
+
+  /* Reduce header padding */
+  header {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #calc-screen-display {
+    font-size: 3rem !important;
+  }
+
+  #calc-grid-layout button {
+    height: 56px !important;
+    min-height: 56px !important;
+    border-radius: 12px !important;
+  }
+}
+
 

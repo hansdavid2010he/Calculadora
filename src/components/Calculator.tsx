@@ -488,7 +488,7 @@ export default function Calculator({
         )}
 
         {/* Regular Tactile Keygrid Keypad */}
-        <div className="grid grid-cols-4 gap-3 px-6 pb-4 max-w-md mx-auto w-full select-none" id="calc-grid-layout">
+        <div className="grid grid-cols-4 gap-3 px-4 pb-4 w-full select-none" id="calc-grid-layout">
           {/* Row 1: Action Modifier Operations */}
           <button
             onClick={handleClear}
